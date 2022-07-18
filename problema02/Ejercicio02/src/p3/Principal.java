@@ -45,7 +45,7 @@ public class Principal {
         TipoMatricula tipos = new TipoMatricula();
         tipos.establecerMatriculas(matricula);
         tipos.establecerPromedioMatriculas();
-        System.out.printf("Promedio de Tarifas: %.2f\n",
-                tipos.obtenerPromedioMatriculas());
+        System.out.printf("%s",
+                tipos);
     }
 }
