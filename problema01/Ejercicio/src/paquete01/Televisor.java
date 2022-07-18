@@ -26,7 +26,7 @@ public class Televisor {
 
     @Override
     public String toString() {
-        return String.format("TV:%s\t%s",
+        return String.format("TV:%s - Precio: %s",
                 obtenerMarca(),
                 obtenerPrecio());
     }
