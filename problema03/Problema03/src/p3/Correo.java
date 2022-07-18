@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package p3;
 
 /**
@@ -10,12 +6,12 @@ package p3;
  * @author reroes
  */
 public class Correo {
-    private DominioGmail dominioGmail;
+    private Dominio dominio;
     private String correo;
     private String username;
     
-    public void establecerDominio(DominioGmail g){
-        dominioGmail = g;
+    public void establecerDominio(Dominio g){
+        dominio = g;
     }
     
     public void establecerUserName(String u){
@@ -23,12 +19,12 @@ public class Correo {
     }
     
     public void establecerCorreo(){
-        correo = String.format("%s@%s", obtenerUserName(), 
+        correo = String.format("%s", 
                 obtenerDominio().obtenerDominio());
     }
     
-    public DominioGmail obtenerDominio(){
-        return dominioGmail;
+    public Dominio obtenerDominio(){
+        return dominio;
     }
     
     public String obtenerUserName(){
